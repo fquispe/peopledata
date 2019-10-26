@@ -1,5 +1,5 @@
 FROM node:carbon-alpine
-RUN MKDIR /RestPeople
+RUN mkdir /RestPeople
 COPY app.js /RestPeople
 COPY package.json /RestPeople
 WORKDIR /RestPeople
