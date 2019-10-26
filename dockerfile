@@ -5,4 +5,4 @@ COPY package.json /peopledata
 WORKDIR /peopledata
 RUN npm install
 EXPOSE 3000
-CMD node src/app.js
+CMD node app.js
