@@ -1,8 +1,8 @@
 FROM node:carbon-alpine
-RUN mkdir /RestPeople
-COPY src /RestPeople
-COPY package.json /RestPeople
-WORKDIR /RestPeople
+RUN mkdir /peopledata
+COPY src /peopledata
+COPY package.json /peopledata
+WORKDIR /peopledata
 RUN npm install
 EXPOSE 3000
 CMD node src/app.js
